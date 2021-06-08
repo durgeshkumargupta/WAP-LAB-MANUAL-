@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<student-info>
+	<student>
+		<usn>RVCE20MCA064</usn>
+		<name>Durgesh</name>
+		<college>RV COLLEGE</college>
+		<city>benaluru</city>
+		<year>2021</year>
+	</student>
+	<student>
+		<usn>RVCE20MCA02</usn>
+		<name>Prince</name>
+		<college>RV COLLEGE</college>
+		<city>benaluru</city>
+		<year>2021</year>
+	</student>
+	<student>
+		<usn>RVCE20MCA03</usn>
+		<name>Rani</name>
+		<college>RV COLLEGE</college>
+		<city>benaluru</city>
+		<year>2021</year>
+	</student>
+	<student>
+		<usn>RVCE20MCA04</usn>
+		<name>Adity</name>
+		<college>RV COLLEGE</college>
+		<city>benaluru</city>
+		<year>2021</year>
+	</student>
+	<student>
+		<usn>RVCE20MCA05</usn>
+		<name>Aman</name>
+		<college>RV COLLEGE</college>
+		<city>benaluru</city>
+		<year>2021</year>
+	</student>
+	<student>
+		<usn>RVCE20MCA06</usn>
+		<name>Amit</name>
+		<college>RV COLLEGE</college>
+		<city>benaluru</city>
+		<year>2021</year>
+	</student>
+	<student>
+		<usn>RVCE20MCA07</usn>
+		<name>Suman</name>
+		<college>RV COLLEGE</college>
+		<city>benaluru</city>
+		<year>2021</year>
+	</student>
+	<student>
+		<usn>RVCE20MCA08</usn>
+		<name>Ajit</name>
+		<college>RV COLLEGE</college>
+		<city>benaluru</city>
+		<year>2021</year>
+	</student>
+	<student>
+		<usn>RVCE20MCA09</usn>
+		<name>Ratan</name>
+		<college>RV COLLEGE</college>
+		<city>benaluru</city>
+		<year>2021</year>
+	</student>
+	<student>
+		<usn>RVCE20MCA10</usn>
+		<name>Lalan</name>
+		<college>RV COLLEGE</college>
+		<city>benaluru</city>
+		<year>2021</year>
+	</student>
+</student-info>
