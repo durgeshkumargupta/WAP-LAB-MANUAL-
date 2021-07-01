@@ -1,106 +1,118 @@
-<!DOCTYPE html> 
-<html> 
-<head><meta charset="utf-8"> 
-<style>  
-students{display:none} 
-table,th,td { 
- border : 1px solid black; 
- border-collapse: collapse; 
-} 
-th,td { 
- padding: 5px;
-} 
-</style> 
-</head> 
-<?xml version="1.0" encoding="utf-8"?> <students> 
- <student> 
- <name>Durgesh</name> 
-<usn>RVCEMCA064</usn> 
-<branch>MCA</branch> 
-<year>Year of Joining: 2021</year> 
-<address>Patna</address> 
- </student> 
- <student> 
- <name>Aman</name> 
-<usn>RV19MCA058</usn> 
-<branch>MCA</branch> 
-<year>Year of Joining: 2021</year> 
-<address>Banglore</address> 
- </student> 
- <student> 
- <name>Saurav</name> 
-<usn>RV19MCA118</usn> 
-<branch>MCA</branch> 
-<year>Year of Joining: 2021</year> 
-<address>BGP</address>
-</student> 
- <student> 
- <name>Gaurav</name> 
-<usn>RV19MCA119</usn> 
-<branch>MCA</branch> 
-<year>Year of Joining: 2021</year> 
-<address>Patna</address> 
-</student> 
- <student> 
- <name>SUMAN</name> 
-<usn>RV19MCA105</usn> 
-<branch>MCA</branch> 
-<year>Year of Joining: 2021</year> 
-<address>Bhagalpur</address> 
-</student> 
- <student> 
- <name>Anurag</name> 
-<usn>RV19MCA102</usn> 
-<branch>MCA</branch> 
-<year>Year of Joining: 2021</year> 
-<address>UP</address> 
-</student> 
- <student> 
- <name>Marcello</name>
-<usn>RV19MCA106</usn> 
-<branch>MCA</branch> 
-<year>Year of Joining: 2021</year> 
-<address>Banglore</address> 
-</student> 
- <student> 
- <name>pooja</name> 
-<usn>RV19MCA107</usn> 
-<branch>MCA</branch> 
-<year>Year of Joining: 2021</year> 
-<address>Banglore</address> 
-</student> 
- <student> 
- <name>Ankitha</name> 
-<usn>RV19MCA108</usn> 
-<branch>MCA</branch> 
-<year>Year of Joining: 2021</year> 
-<address>Banglore</address> 
-</student> 
- <student> 
- <name>Anu</name> 
-<usn>RV19MCA109</usn> 
-<branch>MCA</branch> 
-<year>Year of Joining: 2021</year>
-<address>Banglore</address> 
-</student> 
-</students> 
-<body><h2>Displaying the Student Information Stored in XML  using Javascript</h2> 
-<button type="button" onclick="myFunction()">GET  STUDENT INFORMATION</button> 
-<br><br> 
-<table id="win"></table> 
-<script> 
-function myFunction() { 
- var i; 
- var table="<tr><th>USN</th><th>NAME</th></tr>";  var x =document.getElementsByTagName("student");  for (i = 0; i <x.length; i++) {  
- table += "<tr><td>" +  
- x[i].getElementsByTagName("usn") 
-[0].childNodes[0].nodeValue + 
- "</td><td>" + 
- x[i].getElementsByTagName("name") 
-[0].childNodes[0].nodeValue + 
- "</td></tr>"; 
- } 
- document.getElementById("win").innerHTML = table; }
-</script> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html>
+
+<?xml version="1.0" encoding="utf-8"?>
+		<students> 
+			<student>
+				<name>Durgesh</name> 	
+				<usn>RVCEMCA064</usn>
+				<branch>MCA</branch> 
+				<year>Year of Joining: 2021</year>
+				<address>Patna</address>
+			</student> 
+			<student> 
+					<name>Aman</name> 
+					<usn>RV19MCA058</usn> 
+					<branch>MCA</branch>
+					<year>Year of Joining: 2021</year>
+					<address>Banglore</address>
+			</student>
+			<student> 
+				<name>Saurav</name> 
+				<usn>RV19MCA118</usn>
+				<branch>MCA</branch>
+				<year>Year of Joining: 2021</year>
+				<address>BGP</address>
+			</student> 
+			<student> 
+					<name>Gaurav</name> 
+					<usn>RV19MCA119</usn>
+					<branch>MCA</branch>
+					<year>Year of Joining: 2021</year>
+					<address>Patna</address>
+			</student> 
+			<student> 
+					<name>SUMAN</name> 
+					<usn>RV19MCA105</usn> 
+					<branch>MCA</branch>
+					<year>Year of Joining: 2021</year>
+					<address>Bhagalpur</address>
+			</student>
+			<student>
+					<name>Anurag</name> 
+					<usn>RV19MCA102</usn> 
+					<branch>MCA</branch>
+					<year>Year of Joining: 2021</year>
+					<address>UP</address>
+			</student>
+			<student> 
+				<name>Marcello</name>
+				<usn>RV19MCA106</usn> 
+				<branch>MCA</branch>
+				<year>Year of Joining: 2021</year>
+				<address>Banglore</address>
+			</student>
+			<student>
+				<name>pooja</name> 
+				<usn>RV19MCA107</usn>
+				<branch>MCA</branch>
+				<year>Year of Joining: 2021</year>
+				<address>Banglore</address>
+			</student> 
+			<student> 
+				<name>Ankitha</name>
+				<usn>RV19MCA108</usn>
+				<branch>MCA</branch>
+				<year>Year of Joining: 2021</year>
+				<address>Banglore</address>
+			</student> 
+			<student> 
+				<name>Anu</name> 
+				<usn>RV19MCA109</usn> 
+				<branch>MCA</branch>
+				<year>Year of Joining: 2021</year>
+				<address>Banglore</address>
+			</student> 
+		</students>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			students {
+					display: none
+				}
+
+			table, th, td {
+					border: 1px solid black;
+					border-collapse: collapse;
+				}
+
+			th, td {
+				padding: 5px;
+				}
+		</style>
+	</head>
+<body>
+	<h2>Displaying the Student Information Stored in XML using
+		Javascript</h2>
+	<button type="button" onclick="myFunction()">GET STUDENT
+		INFORMATION</button>
+	<br>
+	<br>
+	<table id="win"></table>
+	<script>
+		function myFunction() {
+			var i;
+			var table = "<tr><th>USN</th><th>NAME</th></tr>";
+			var x = document.getElementsByTagName("student");
+			for (i = 0; i < x.length; i++) {
+				table += "<tr><td>"
+						+ x[i].getElementsByTagName("usn")[0].childNodes[0].nodeValue
+						+ "</td><td>"
+						+ x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue
+						+ "</td></tr>";
+			}
+			document.getElementById("win").innerHTML = table;
+		}
+	</script>
+</body>
+</html>
