@@ -33,7 +33,7 @@
             ]
 
 
-            var tableBody = '<table border="1"><tr><td>Student-id</td><td >Student Name</td><td >Major</td><td>Mobile</td></tr>'
+            var tableBody = '<table border="1"><tr><th>Student-id</th><th >Student Name</th><th >Major</th><th>Mobile</th></tr>'
 
             students.forEach(function (d) {
                 tableBody += '<tr><td>' + d.stud_ID + '</td><td>' + d.stud_Name + '</td><td>' + d.Major + '</td><td>' + d.mobile + '</td></tr>';
@@ -42,8 +42,7 @@
 
             // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
 
-            var divContainer = document.getElementById("showData");
-            divContainer.innerHTML = tableBody;
+            document.getElementById("showData").innerHTML = tableBody;
         }
     </script>
 
