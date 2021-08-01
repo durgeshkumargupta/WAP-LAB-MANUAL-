@@ -92,13 +92,10 @@
 		</style>
 	</head>
 <body>
-	<h2>Displaying the Student Information Stored in XML using
-		Javascript</h2>
-	<button type="button" onclick="myFunction()">GET STUDENT
-		INFORMATION</button>
+	<h2>Displaying the Student Information Stored in XML using Javascript</h2>
+	<input type="button" onclick="myFunction()" value="Get XML Data">
 	<br>
-	<br>
-	<table id="win"></table>
+	<table id="showData"></table>
 	<script>
 		function myFunction() {
 			var i;
@@ -111,7 +108,7 @@
 						+ x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue
 						+ "</td></tr>";
 			}
-			document.getElementById("win").innerHTML = table;
+			document.getElementById("showData").innerHTML = table;
 		}
 	</script>
 </body>
