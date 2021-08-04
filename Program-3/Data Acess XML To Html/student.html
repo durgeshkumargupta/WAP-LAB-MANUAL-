@@ -92,24 +92,23 @@
 		</style>
 	</head>
 <body>
-	<h2>Displaying the Student Information Stored in XML using Javascript</h2>
-	<input type="button" onclick="myFunction()" value="Get XML Data">
-	<br>
-	<table id="showData"></table>
 	<script>
 		function myFunction() {
 			var i;
-			var table = "<tr><th>USN</th><th>NAME</th></tr>";
+			var tableBody = "<tr><th>USN</th><th>NAME</th></tr>";
 			var x = document.getElementsByTagName("student");
 			for (i = 0; i < x.length; i++) {
-				table += "<tr><td>"
+				tableBody += "<tr><td>"
 						+ x[i].getElementsByTagName("usn")[0].childNodes[0].nodeValue
 						+ "</td><td>"
 						+ x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue
 						+ "</td></tr>";
 			}
-			document.getElementById("showData").innerHTML = table;
+			document.getElementById("showData").innerHTML = tableBody;
 		}
 	</script>
+        <input type="button" onclick="myFunction()" value="Get XML Data">
+	<br>
+	<table id="showData"></table>
 </body>
 </html>
